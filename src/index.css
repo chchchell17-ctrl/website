@@ -1,0 +1,553 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Azim", "Font Azim", "Varela Round", "Andika", system-ui, sans-serif;
+  --font-sans: "Azim", "Font Azim", "Andika", "Varela Round", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #5bbbe9;
+  }
+  html,
+  body {
+    font-family: var(--font-sans);
+    color: #10375c;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: transparent;
+  }
+}
+
+/* Crisp Casper frosted white halo so colourful uppercase text pops on bright sky */
+.casper-text-halo {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 5px rgba(255, 255, 255, 0.94);
+  filter: drop-shadow(0 4px 10px rgba(16, 55, 92, 0.24));
+}
+
+.casper-sub-halo {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3.5px rgba(255, 255, 255, 0.92);
+  filter: drop-shadow(0 2px 6px rgba(16, 55, 92, 0.18));
+}
+
+/* Frutiger Aero & Vista Glass Surfaces */
+.aero-glass-card {
+  position: relative;
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow:
+    0 18px 38px -14px rgba(16, 55, 92, 0.24),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.aero-glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px 1px auto 1px;
+  height: 46%;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.14) 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.aero-glossy-btn {
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 8px 20px -6px rgba(16, 55, 92, 0.28),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.82),
+    inset 0 -2px 4px rgba(16, 55, 92, 0.12);
+}
+
+.aero-glossy-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px 2px auto 2px;
+  height: 48%;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  pointer-events: none;
+}
+
+/* Environmental Animations (GPU compositor properties only: transform, opacity) */
+@keyframes cloudDriftSlow {
+  0% {
+    transform: translate3d(-2.5%, 0, 0);
+  }
+  50% {
+    transform: translate3d(2.5%, -3px, 0);
+  }
+  100% {
+    transform: translate3d(-2.5%, 0, 0);
+  }
+}
+
+@keyframes cloudDriftWide {
+  0% {
+    transform: translate3d(3%, 0, 0);
+  }
+  50% {
+    transform: translate3d(-3%, 2px, 0);
+  }
+  100% {
+    transform: translate3d(3%, 0, 0);
+  }
+}
+
+@keyframes bubbleRise {
+  0% {
+    transform: translate3d(0, 12px, 0) scale(0.96);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate3d(6px, -14px, 0) scale(1.02);
+    opacity: 0.58;
+  }
+  100% {
+    transform: translate3d(-4px, -28px, 0) scale(0.96);
+    opacity: 0.3;
+  }
+}
+
+@keyframes butterflyGlideA {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-4deg);
+  }
+  25% {
+    transform: translate3d(42px, -18px, 0) rotate(5deg);
+  }
+  50% {
+    transform: translate3d(88px, 6px, 0) rotate(-3deg);
+  }
+  75% {
+    transform: translate3d(40px, 16px, 0) rotate(4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-4deg);
+  }
+}
+
+@keyframes butterflyGlideB {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(3deg);
+  }
+  33% {
+    transform: translate3d(-38px, -22px, 0) rotate(-6deg);
+  }
+  66% {
+    transform: translate3d(-72px, 8px, 0) rotate(4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(3deg);
+  }
+}
+
+@keyframes wingFlutter {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.45);
+  }
+}
+
+@keyframes flowerSway {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.82;
+  }
+}
+
+@keyframes sunRaySpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.22;
+  }
+  50% {
+    transform: rotate(5deg) scale(1.02);
+    opacity: 0.34;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.22;
+  }
+}
+
+/* Detective Pusheen Subtle Mascot Animations */
+@keyframes pusheenBreathe {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scaleY(1);
+  }
+  50% {
+    transform: translate3d(0, -2px, 0) scaleY(1.022);
+  }
+}
+
+@keyframes pusheenHeadTilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(-1.8deg);
+  }
+  70% {
+    transform: rotate(1.4deg);
+  }
+}
+
+@keyframes pusheenBlink {
+  0%,
+  44%,
+  48%,
+  92%,
+  96%,
+  100% {
+    transform: scaleY(1);
+  }
+  46%,
+  94% {
+    transform: scaleY(0.08);
+  }
+}
+
+@keyframes pusheenPawWave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pusheenGlassTilt {
+  0%,
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-5deg) translate3d(1px, -2px, 0);
+  }
+}
+
+.animate-cloud-slow {
+  animation: cloudDriftSlow 36s ease-in-out infinite;
+}
+
+.animate-cloud-wide {
+  animation: cloudDriftWide 44s ease-in-out infinite;
+}
+
+.animate-bubble-rise {
+  animation: bubbleRise 14s ease-in-out infinite;
+}
+
+.animate-butterfly-a {
+  animation: butterflyGlideA 24s ease-in-out infinite;
+}
+
+.animate-butterfly-b {
+  animation: butterflyGlideB 28s ease-in-out infinite;
+}
+
+.animate-wing-flutter {
+  transform-origin: center;
+  animation: wingFlutter 0.48s ease-in-out infinite;
+}
+
+.animate-flower-sway {
+  transform-origin: bottom center;
+  animation: flowerSway 5.5s ease-in-out infinite;
+}
+
+.animate-sun-pulse {
+  animation: sunPulse 9s ease-in-out infinite;
+}
+
+.animate-sun-rays {
+  animation: sunRaySpin 24s ease-in-out infinite;
+}
+
+.animate-pusheen-breathe {
+  transform-origin: bottom center;
+  animation: pusheenBreathe 3.8s ease-in-out infinite;
+}
+
+.animate-pusheen-head {
+  transform-origin: 90px 100px;
+  animation: pusheenHeadTilt 6.5s ease-in-out infinite;
+}
+
+.animate-pusheen-blink {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: pusheenBlink 5.4s ease-in-out infinite;
+}
+
+.animate-pusheen-paw {
+  transform-origin: 132px 106px;
+  animation: pusheenPawWave 5.2s ease-in-out infinite;
+}
+
+.animate-pusheen-glass {
+  transform-origin: 54px 105px;
+  animation: pusheenGlassTilt 4.8s ease-in-out infinite;
+}
+
+@keyframes fishSwimRight {
+  0% {
+    transform: translate3d(-12px, 0, 0);
+  }
+  50% {
+    transform: translate3d(28px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(-12px, 0, 0);
+  }
+}
+
+@keyframes fishSwimLeft {
+  0% {
+    transform: translate3d(20px, 0, 0) scaleX(-1);
+  }
+  50% {
+    transform: translate3d(-18px, 4px, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate3d(20px, 0, 0) scaleX(-1);
+  }
+}
+
+@keyframes streamShimmer {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translate3d(4px, 2px, 0);
+  }
+}
+
+@keyframes lockWobble {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg) scale(1.06);
+  }
+  45% {
+    transform: rotate(10deg) scale(1.06);
+  }
+  70% {
+    transform: rotate(-6deg);
+  }
+}
+
+@keyframes spotlightHalo {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.75), 0 0 26px rgba(56, 189, 248, 0.65);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(250, 204, 21, 0.88), 0 0 34px rgba(250, 204, 21, 0.72);
+  }
+}
+
+@keyframes walkStrideA {
+  0%,
+  100% {
+    transform: rotate(19deg);
+  }
+  50% {
+    transform: rotate(-19deg);
+  }
+}
+
+@keyframes walkStrideB {
+  0%,
+  100% {
+    transform: rotate(-19deg);
+  }
+  50% {
+    transform: rotate(19deg);
+  }
+}
+
+@keyframes walkArmA {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes walkArmB {
+  0%,
+  100% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes walkBodyBob {
+  0%,
+  50%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25%,
+  75% {
+    transform: translate3d(0, -3.2px, 0);
+  }
+}
+
+@keyframes walkShadowPulse {
+  0%,
+  50%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.2;
+  }
+  25%,
+  75% {
+    transform: scaleX(0.86);
+    opacity: 0.14;
+  }
+}
+
+.animate-walk-leg-a {
+  transform-box: view-box;
+  animation: walkStrideA 0.46s ease-in-out infinite;
+}
+
+.animate-walk-leg-b {
+  transform-box: view-box;
+  animation: walkStrideB 0.46s ease-in-out infinite;
+}
+
+.animate-walk-arm-a {
+  transform-box: view-box;
+  animation: walkArmA 0.46s ease-in-out infinite;
+}
+
+.animate-walk-arm-b {
+  transform-box: view-box;
+  animation: walkArmB 0.46s ease-in-out infinite;
+}
+
+.animate-walk-bob {
+  animation: walkBodyBob 0.46s ease-in-out infinite;
+}
+
+.animate-walk-shadow {
+  transform-box: view-box;
+  transform-origin: 90px 226px;
+  animation: walkShadowPulse 0.46s ease-in-out infinite;
+}
+
+.animate-fish-right {
+  animation: fishSwimRight 12s ease-in-out infinite;
+}
+
+.animate-fish-left {
+  animation: fishSwimLeft 14s ease-in-out infinite;
+}
+
+.animate-stream-shimmer {
+  animation: streamShimmer 5.5s ease-in-out infinite;
+}
+
+.animate-lock-wobble {
+  animation: lockWobble 0.45s ease-in-out;
+}
+
+.tutorial-spotlight-ring {
+  animation: spotlightHalo 1.7s ease-in-out infinite;
+}
+
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cloud-slow,
+  .animate-cloud-wide,
+  .animate-bubble-rise,
+  .animate-butterfly-a,
+  .animate-butterfly-b,
+  .animate-wing-flutter,
+  .animate-flower-sway,
+  .animate-sun-pulse,
+  .animate-sun-rays,
+  .animate-pusheen-breathe,
+  .animate-pusheen-head,
+  .animate-pusheen-blink,
+  .animate-pusheen-paw,
+  .animate-pusheen-glass,
+  .animate-walk-leg-a,
+  .animate-walk-leg-b,
+  .animate-walk-arm-a,
+  .animate-walk-arm-b,
+  .animate-walk-bob,
+  .animate-walk-shadow,
+  .animate-fish-right,
+  .animate-fish-left,
+  .animate-stream-shimmer,
+  .tutorial-spotlight-ring {
+    animation: none !important;
+  }
+}
+

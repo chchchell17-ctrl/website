@@ -1,0 +1,1792 @@
+# MASTER DEVELOPMENT PROMPT – SCREEN 02
+# DIGITAL DETECTIVE WORLD
+# THE JUNIOR DETECTIVE'S FIRST ADVENTURE
+
+## IMPORTANT: CONTINUE DIRECTLY AFTER SCREEN 01
+
+You are continuing development of my existing website, DIGITAL DETECTIVE WORLD.
+
+SCREEN 01 – LOGIN PORTAL has already been designed and implemented.
+
+Your task is to continue directly from Screen 01 and develop SCREEN 02.
+
+Do not rebuild Screen 01.
+
+Do not redesign the existing login page.
+
+Do not create a separate website.
+
+Preserve the existing project structure, framework, components, authentication, database connections, visual assets and styling conventions.
+
+Your responsibility is to connect Screen 02 seamlessly to the existing login system and implement the complete student onboarding experience.
+
+This screen includes:
+
+1. Student Character Customisation.
+2. Cinematic Arrival in Detective Town.
+3. Detective Pusheen's First Appearance.
+4. Complete Welcome Conversation.
+5. Interactive Game Interface Tutorial.
+6. Player Profile Tutorial.
+7. Detective Bag Tutorial.
+8. Mission Tracker Tutorial.
+9. Settings and Help Tutorial.
+10. Introduction to All Seven Buildings.
+11. Interactive Town Exploration.
+12. Avatar Movement Tutorial.
+13. Building Selection Tutorial.
+14. Tutorial Completion.
+15. Transition into Detective HQ.
+
+IMPORTANT:
+
+This is an independent self-learning website for Year 5 pupils.
+
+Students must be able to complete the entire experience without a teacher guiding them.
+
+Do not create passive screens where pupils simply click NEXT repeatedly.
+
+Every important interaction must be functional, understandable and provide immediate feedback.
+
+Build the actual website features, not just visual mock-ups or wireframes.
+
+---
+
+# PART 1 – CONNECT SCREEN 02 TO SCREEN 01
+
+After a student successfully authenticates through Screen 01 using:
+
+- Class Code.
+- Student ID.
+- Student PIN.
+
+The system must check the student's saved profile.
+
+There are TWO possible pathways.
+
+### PATH A – FIRST-TIME STUDENT
+
+If the student has never created an avatar:
+
+Successful Student Login
+↓
+Screen 02
+↓
+Character Customisation
+↓
+Cinematic Detective Town Introduction
+↓
+Meet Detective Pusheen
+↓
+Interactive Tutorial
+↓
+Explore Seven Buildings
+↓
+Enter Detective HQ
+↓
+Screen 03
+
+### PATH B – RETURNING STUDENT
+
+If the student already has an avatar:
+
+Successful Student Login
+↓
+Restore Saved Avatar
+↓
+Restore Saved Progress
+↓
+Load Detective Town
+↓
+Resume Previous Position or Mission
+↓
+Continue Adventure
+
+Returning students must NOT be forced to customise their character again or repeat the entire tutorial.
+
+Provide options to replay the tutorial and edit their character when appropriate.
+
+Use the existing authentication session.
+
+Do not create a second login system.
+
+The student ID, nickname, avatar and learning progress must remain associated with the authenticated student account.
+
+---
+
+# PART 2 – VISUAL IDENTITY AND GAME ENVIRONMENT
+
+Maintain the approved visual identity:
+
+PURBLE PLACE × FRUTIGER AERO.
+
+The website must feel like a colourful, beautiful, immersive 3D adventure game.
+
+It must not look like:
+- A conventional school website.
+- A corporate dashboard.
+- A flat educational worksheet.
+- A dark cyberpunk game.
+- A basic collection of menu buttons.
+
+## 2.1 Colour palette
+
+Use:
+
+- Sky blue.
+- Aqua.
+- Fresh green.
+- Lime green.
+- Soft lavender.
+- Pastel pink.
+- Glossy white.
+- Soft purple.
+
+Use dark blue or blue-green for readable text.
+
+## 2.2 Environment
+
+The game world should include:
+
+- Bright blue sky.
+- Soft white clouds.
+- Green rolling hills.
+- Colourful flowers.
+- Small trees.
+- Glass buildings.
+- Crystal-clear water.
+- Small tropical fish.
+- Butterflies.
+- Floating transparent bubbles.
+- Wooden bridges.
+- Stone pathways.
+- Soft sunlight.
+- Gentle shadows.
+
+Use a layered environment to create depth.
+
+The overall atmosphere should be cheerful, peaceful, colourful and inviting.
+
+Use original or properly licensed assets. Do not copy copyrighted Purble Place artwork.
+
+If original artwork is missing, create suitable temporary assets and clearly identify their locations for later replacement.
+
+## 2.3 Animation
+
+Include:
+
+- Slowly moving clouds.
+- Floating glass bubbles.
+- Occasional butterflies.
+- Gently swaying flowers.
+- Flowing water.
+- Swimming fish.
+- Subtle environmental movement.
+- Smooth camera transitions.
+
+Respect reduced-motion preferences.
+
+Keep animations lightweight and optimised.
+
+---
+
+# PART 3 – CHARACTER CUSTOMISATION
+
+## SCENE 01: CREATE YOUR DETECTIVE!
+
+IMPORTANT:
+
+Character Customisation is the FIRST experience after successful login for a student who has not created an avatar.
+
+Do not skip this section.
+
+Do not assign every student the same default avatar.
+
+Students must be able to create a personalised character.
+
+## 3.1 Visual environment
+
+Create a beautiful character-creation room.
+
+The screen should look like a proper character customisation station in an adventure game.
+
+Include:
+
+- Large circular glass platform.
+- Character preview in the centre.
+- Floating bubbles.
+- Soft blue sky.
+- Pastel background.
+- Clothing display area.
+- Accessory display area.
+- Character rotation controls.
+- Customisation categories.
+- Large confirmation button.
+
+The character must be displayed in full body.
+
+The student should be able to see the changes immediately.
+
+## 3.2 Character customisation layout
+
+LEFT OR CENTRE:
+
+Large full-body avatar preview.
+
+RIGHT:
+
+Customisation panel.
+
+BOTTOM:
+
+Randomise, Reset, Undo and Confirm Character buttons.
+
+The design must remain responsive on smaller screens.
+
+## 3.3 Customisation categories
+
+Provide the following categories:
+
+### A. Character appearance
+
+Offer multiple inclusive character base options.
+
+### B. Skin tone
+
+Offer a variety of natural skin tones.
+
+### C. Hairstyle
+
+Include:
+- Short hair.
+- Long hair.
+- Curly hair.
+- Straight hair.
+- Other suitable hairstyles.
+
+### D. Hair colour
+
+Include:
+- Black.
+- Brown.
+- Blonde.
+- Other suitable natural colours.
+
+### E. Clothing
+
+Include:
+- Hoodie.
+- Jacket.
+- Polo shirt.
+- Casual shirt.
+- Overalls.
+- Other suitable outfits.
+
+Provide different clothing colours.
+
+### F. Accessories
+
+Include:
+- Glasses.
+- Headbands.
+- Caps.
+- Backpacks.
+- Decorative accessories.
+- Detective-themed accessories.
+
+### G. Shoes
+
+Include:
+- Trainers.
+- Boots.
+- Casual shoes.
+
+Do not lock basic appearance or clothing choices behind gender categories.
+
+All students should be free to combine the available options.
+
+## 3.4 Character preview interactions
+
+When a student selects an option:
+
+- Update the avatar immediately.
+- Do not refresh the page.
+- Maintain the other selected features.
+- Allow the student to compare options.
+- Allow the student to rotate the character.
+- Provide a reset option.
+
+Use modular character assets wherever possible.
+
+The character should be assembled from reusable visual layers or compatible avatar components rather than generating a completely unrelated static picture for every combination.
+
+## 3.5 Detective nickname
+
+Provide a nickname field.
+
+Heading:
+
+CHOOSE YOUR DETECTIVE NAME
+
+Placeholder:
+
+"Enter your detective nickname"
+
+Examples:
+
+- Detective Star.
+- Agent Spark.
+- Detective Blue.
+- Agent Shadow.
+- Detective Flash.
+
+Students may use an appropriate nickname.
+
+Do not request:
+- Full legal names.
+- Home addresses.
+- Phone numbers.
+- Personal photographs.
+- Passwords.
+- Other unnecessary personal information.
+
+Include basic validation and an appropriate character limit.
+
+## 3.6 Character creation buttons
+
+Provide:
+
+RANDOMISE
+RESET
+UNDO
+CONFIRM CHARACTER
+
+All buttons must work.
+
+RANDOMISE:
+Generates a random suitable appearance using available assets.
+
+RESET:
+Restores the default appearance.
+
+UNDO:
+Reverses the last customisation change.
+
+CONFIRM CHARACTER:
+Validates the nickname and saves the avatar.
+
+## 3.7 Character confirmation
+
+After the student confirms:
+
+Display:
+
+YOUR DETECTIVE IS READY!
+
+"Your adventure is about to begin."
+
+Show the completed avatar on a glowing circular platform.
+
+Add a gentle sparkle animation.
+
+Button:
+
+LET'S GO!
+
+When clicked:
+
+1. Save the avatar configuration.
+2. Save the detective nickname.
+3. Associate the avatar with the authenticated student.
+4. Save the character creation status.
+5. Transition into Detective Town.
+
+The avatar must remain consistent throughout all seven learning locations.
+
+---
+
+# PART 4 – CINEMATIC ARRIVAL IN DETECTIVE TOWN
+
+## SCENE 02: WELCOME TO DETECTIVE TOWN
+
+After character confirmation, begin a cinematic introduction.
+
+Do not immediately display the full HUD.
+
+Start with a beautiful panoramic environment.
+
+### Camera sequence
+
+SHOT 1:
+Show the bright blue sky and moving clouds.
+
+SHOT 2:
+Move down towards the green rolling hills.
+
+SHOT 3:
+Reveal a crystal-clear stream.
+
+SHOT 4:
+Show colourful flowers, butterflies and trees.
+
+SHOT 5:
+Reveal the seven different buildings.
+
+SHOT 6:
+Move towards the open area near Detective HQ.
+
+SHOT 7:
+Reveal the student's customised avatar.
+
+The avatar enters the scene and looks around.
+
+Display the student's detective nickname above their character.
+
+The avatar performs a small arrival animation.
+
+Example:
+
+- Looks around.
+- Waves.
+- Takes a few steps.
+- Looks towards the buildings.
+
+Player dialogue:
+
+"WOW! What a beautiful place!"
+
+"Where am I?"
+
+A small movement is seen behind a nearby tree.
+
+Something is approaching.
+
+---
+
+# PART 5 – DETECTIVE PUSHEEN'S FIRST FULL APPEARANCE
+
+## SCENE 03: MEET DETECTIVE PUSHEEN
+
+Use the established Detective Pusheen artwork.
+
+Do not redesign the character.
+
+Character appearance:
+
+- Cute grey cat.
+- Brown detective hat.
+- Magnifying glass.
+- Friendly expression.
+- Soft rounded proportions.
+
+The small Pusheen mascot used on Screen 01 must now become a full character in the adventure.
+
+### Entrance animation
+
+1. Pusheen peeks from behind a tree.
+2. Looks through the magnifying glass.
+3. Notices the student.
+4. Walks towards the student.
+5. Stops beside the avatar.
+6. Waves.
+7. Displays a speech bubble.
+
+### COMPLETE WELCOME CONVERSATION
+
+DETECTIVE PUSHEEN:
+
+"Hmm... Who do we have here?"
+
+PLAYER:
+
+"Hello? Who are you?"
+
+DETECTIVE PUSHEEN:
+
+"Oh! You must be our new Junior Detective!"
+
+PLAYER:
+
+"Junior Detective?"
+
+DETECTIVE PUSHEEN:
+
+"That's right! My name is Detective Pusheen. And I have been waiting for you!"
+
+PLAYER:
+
+"Waiting for me? Why?"
+
+DETECTIVE PUSHEEN:
+
+"Because we have a very important mission ahead of us!"
+
+PLAYER:
+
+"What kind of mission?"
+
+DETECTIVE PUSHEEN:
+
+"A digital mystery! There are messages, clues and secrets waiting to be discovered."
+
+PLAYER:
+
+"That sounds exciting!"
+
+DETECTIVE PUSHEEN:
+
+"It certainly is! But before we begin, I need to show you how everything works."
+
+PLAYER:
+
+"Okay!"
+
+DETECTIVE PUSHEEN:
+
+"Are you ready to become a Junior Digital Detective?"
+
+PLAYER RESPONSE OPTIONS:
+
+1. Yes! Show me!
+2. I'm ready, Detective!
+
+Both options lead to the tutorial.
+
+PUSHEEN:
+
+"Fantastic! Let's explore!"
+
+Use suitable character expressions:
+- Curious.
+- Surprised.
+- Happy.
+- Excited.
+- Encouraging.
+
+Dialogue must be simple English suitable for Year 5 pupils.
+
+---
+
+# PART 6 – GAME INTERFACE / HUD
+
+## SCENE 04: INTRODUCING THE GAME INTERFACE
+
+The camera zooms out slightly.
+
+The complete town becomes visible.
+
+The game HUD appears gradually.
+
+The HUD must remain consistent throughout the adventure.
+
+## 6.1 Player Profile – Top Left
+
+Display:
+
+- Small avatar portrait.
+- Detective nickname.
+- Current level.
+
+Clicking the profile opens the actual Player Profile Panel.
+
+## 6.2 XP and Stars – Top Centre
+
+Display:
+
+- Current XP.
+- Total stars.
+- Current level.
+- Mission progress.
+
+For a new student:
+
+LEVEL 1
+0 XP
+0 STARS
+
+These values must be connected to the actual student progress record.
+
+## 6.3 Game Tools – Top Right
+
+Include:
+
+1. Detective Bag.
+2. Mission Tracker.
+3. Settings.
+4. Help.
+
+All icons must be genuinely clickable.
+
+Provide tooltips.
+
+## 6.4 Save Indicator
+
+Include a small indicator:
+
+SAVING...
+
+SAVED
+
+OFFLINE – SAVED LOCALLY
+
+Show the appropriate status.
+
+Do not display SAVED unless the relevant save operation succeeds.
+
+## 6.5 HUD appearance
+
+Use:
+
+- Rounded glass panels.
+- Soft transparent backgrounds.
+- Pastel icons.
+- Subtle shadows.
+- Clear typography.
+- Consistent spacing.
+
+Avoid overcrowding the screen.
+
+---
+
+# PART 7 – INTERACTIVE TUTORIAL
+
+IMPORTANT:
+
+This tutorial must be interactive.
+
+Students must physically click the actual interface controls.
+
+Do not simply display instructions and allow students to skip everything using NEXT.
+
+Use a guided spotlight system.
+
+For every tutorial step:
+
+1. Dim the surrounding screen slightly.
+2. Highlight the actual interface element.
+3. Display Pusheen's dialogue.
+4. Explain what the element does.
+5. Ask the student to click it.
+6. Open the real panel.
+7. Allow the student to explore.
+8. Require the student to close the panel.
+9. Provide immediate feedback.
+10. Continue to the next step.
+
+Students may replay instructions.
+
+Incorrect interactions must not permanently block progress.
+
+## SCENE 05 – TUTORIAL 1: PLAYER PROFILE
+
+PUSHEEN:
+
+"First, let's take a look at your detective profile!"
+
+"Click your little avatar picture!"
+
+Highlight the actual profile icon.
+
+When clicked, open the Player Profile Panel.
+
+Display:
+
+- Avatar.
+- Detective nickname.
+- Level.
+- XP.
+- Stars.
+- Badges.
+- Missions completed.
+
+For a new student:
+
+LEVEL 1
+0 XP
+0 STARS
+0 BADGES
+0 COMPLETED MISSIONS
+
+PUSHEEN:
+
+"Look! This is your detective profile. Every time you complete a mission, your achievements will be recorded here."
+
+PLAYER:
+
+"Can I change my character later?"
+
+PUSHEEN:
+
+"Of course! You can revisit character customisation whenever that feature is available."
+
+The student closes the profile panel.
+
+Immediate feedback:
+
+"Great! You know where to find your detective information!"
+
+## SCENE 06 – TUTORIAL 2: DETECTIVE BAG
+
+PUSHEEN:
+
+"Every detective needs a bag!"
+
+PLAYER:
+
+"What do I keep inside?"
+
+PUSHEEN:
+
+"Your special items, badges and collectibles! You can check them whenever you want."
+
+Highlight the actual Detective Bag icon.
+
+Instruction:
+
+"Click your Detective Bag to open it."
+
+When clicked, display the real inventory interface.
+
+Include four categories:
+
+1. Badges.
+2. Collectibles.
+3. Mission Items.
+4. Special Rewards.
+
+For new students:
+
+Display:
+
+YOUR DETECTIVE BAG IS EMPTY!
+
+"Complete missions to collect special items and rewards."
+
+Do not create fake collectibles.
+
+PUSHEEN:
+
+"Don't worry! You'll have plenty of opportunities to collect things!"
+
+The student closes the inventory.
+
+Immediate feedback:
+
+"Well done! You know where to keep your detective treasures!"
+
+## SCENE 07 – TUTORIAL 3: MISSION TRACKER
+
+PUSHEEN:
+
+"Now, this is one of the most important tools!"
+
+"Your Mission Tracker tells you what you need to do next."
+
+Highlight the actual Mission Tracker icon.
+
+Instruction:
+
+"Click the Mission Tracker!"
+
+Display:
+
+YOUR ADVENTURE
+
+MISSION 01
+
+THE MYSTERY OF THE UNEXPECTED PRIZE
+
+LOCATION:
+
+DETECTIVE HQ
+
+OBJECTIVE:
+
+"Watch a video about a suspicious online message and decide whether you would click it."
+
+STATUS:
+
+READY TO BEGIN
+
+PUSHEEN:
+
+"See? This is your first mission!"
+
+"Whenever you need to remember what you're supposed to do, just check your Mission Tracker."
+
+The student closes the panel.
+
+Immediate feedback:
+
+"Excellent! You have discovered your Mission Tracker!"
+
+Do not display the actual induction video yet.
+
+That belongs to Screen 03.
+
+## SCENE 08 – TUTORIAL 4: SETTINGS AND HELP
+
+PUSHEEN:
+
+"One last thing before we explore!"
+
+"Let's check your settings."
+
+Highlight the actual Settings icon.
+
+When clicked, open the real Settings Panel.
+
+Include:
+
+SOUND EFFECTS:
+On / Off.
+
+BACKGROUND MUSIC:
+On / Off.
+
+DIALOGUE NARRATION:
+On / Off.
+
+SUBTITLES:
+On / Off.
+
+TEXT SIZE:
+Small / Medium / Large.
+
+ANIMATION:
+Normal / Reduced Motion.
+
+HELP:
+Replay the tutorial.
+
+Students must be able to change settings and see the changes applied immediately.
+
+Require at least one setting interaction during this tutorial. Students can restore their preferred original setting afterwards.
+
+PUSHEEN:
+
+"These settings help you enjoy the adventure in the way that feels comfortable for you."
+
+The student closes the panel.
+
+Immediate feedback:
+
+"Fantastic! Now you know where to find help if you need it."
+
+---
+
+# PART 8 – INTRODUCING THE SEVEN BUILDINGS
+
+## SCENE 09: EXPLORE DETECTIVE TOWN
+
+The camera zooms out to reveal all seven buildings.
+
+PUSHEEN:
+
+"Wonderful! Now that you know how to use your detective tools, let's explore our town!"
+
+PLAYER:
+
+"How many places are there?"
+
+PUSHEEN:
+
+"There are SEVEN special locations! Each one has a different mission waiting for you."
+
+PLAYER:
+
+"Can we visit all of them?"
+
+PUSHEEN:
+
+"Absolutely! But we need to complete our missions one by one."
+
+All seven buildings must be visible.
+
+Each building must have a unique architectural design, colour identity and visual symbol.
+
+## BUILDING 1 – DETECTIVE HQ
+
+Appearance:
+
+- Large purple and aqua glass building.
+- Magnifying-glass emblem.
+- Large windows.
+- Detective-themed entrance.
+- Small flags.
+- Digital investigation decorations.
+
+Sign:
+
+DETECTIVE HQ
+
+Description:
+
+"Your first mission starts here!"
+
+STATUS:
+
+UNLOCKED.
+
+PUSHEEN:
+
+"This is Detective HQ! Our adventure begins here."
+
+## BUILDING 2 – RED FLAG CENTRE
+
+Appearance:
+
+- Tall investigation tower.
+- Glass walls.
+- Red warning flags.
+- Magnifying-glass symbol.
+- Digital warning signs.
+
+Sign:
+
+RED FLAG CENTRE
+
+Description:
+
+"Discover the warning signs hidden in suspicious messages."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"At the Red Flag Centre, we'll learn how to spot warning signs in suspicious messages."
+
+## BUILDING 3 – AINA'S HOUSE
+
+Appearance:
+
+- Two-storey pastel house.
+- Lavender roof.
+- Pink front door.
+- White walls.
+- Flower garden.
+- Stone pathway.
+- Mailbox.
+
+Sign:
+
+AINA'S HOUSE
+
+Description:
+
+"Help Aina solve her mysterious online message."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"This is Aina's house. She needs our help to solve a mysterious message!"
+
+## BUILDING 4 – CYBER CAFÉ
+
+Appearance:
+
+- Modern glass café.
+- Computer screens.
+- Wi-Fi symbol.
+- Colourful windows.
+- Café tables.
+- Robot mascot sign.
+
+Sign:
+
+CYBER CAFÉ
+
+Description:
+
+"Investigate suspicious digital messages."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"At the Cyber Café, we'll investigate different digital messages!"
+
+## BUILDING 5 – ADVICE CENTRE
+
+Appearance:
+
+- Friendly glass building.
+- Large speech-bubble sign.
+- Pink and aqua windows.
+- Noticeboard.
+- Seating area.
+
+Sign:
+
+ADVICE CENTRE
+
+Description:
+
+"Learn how to ask for, give and respond to advice."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"Here, we'll learn how to ask for advice, give advice and respond to others!"
+
+## BUILDING 6 – GAME ARCADE
+
+Appearance:
+
+- Colourful gaming building.
+- Large cartoon eyes.
+- Glossy purple and aqua glass.
+- Gaming signs.
+- Controller decorations.
+- Glowing entrance.
+
+Sign:
+
+GAME ARCADE
+
+Description:
+
+"Find Daniel and complete your final reading challenge."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"There's a special challenge waiting at the Game Arcade. We need to find Daniel!"
+
+## BUILDING 7 – DIGITAL SAFE GARDEN
+
+Appearance:
+
+- Large glass greenhouse.
+- Green plants.
+- Crystal-clear stream.
+- Tropical fish.
+- Butterflies.
+- Flowers.
+- Wooden bridge.
+
+Sign:
+
+DIGITAL SAFE GARDEN
+
+Description:
+
+"Complete your Digital Safety Passport."
+
+STATUS:
+
+LOCKED.
+
+PUSHEEN:
+
+"And finally, we'll visit the Digital Safe Garden to complete our Digital Safety Passport!"
+
+---
+
+# PART 9 – INTERACTIVE BUILDING DISCOVERY
+
+## SCENE 10: CLICK AND DISCOVER
+
+Do not simply display the buildings.
+
+Students must interact with them.
+
+Requirements:
+
+- Every building is selectable.
+- Hovering displays the building name.
+- Clicking opens its information card.
+- Each information card displays the description.
+- Each card displays the building status.
+- Locked buildings display a lock symbol and LOCKED label.
+- Detective HQ displays an ENTER button.
+
+The student must explore all seven building descriptions during the tutorial.
+
+They can explore the six locked locations without entering them.
+
+Example locked-building feedback:
+
+PUSHEEN:
+
+"Not yet, Detective! We still have some important clues to discover before we can visit this place."
+
+Display a gentle lock animation.
+
+Do not use harsh red error screens for locked locations.
+
+## Initial building states
+
+Detective HQ – UNLOCKED.
+
+Red Flag Centre – LOCKED.
+
+Aina's House – LOCKED.
+
+Cyber Café – LOCKED.
+
+Advice Centre – LOCKED.
+
+Game Arcade – LOCKED.
+
+Digital Safe Garden – LOCKED.
+
+All building states must be linked to actual mission progression, not hardcoded visual decorations.
+
+---
+
+# PART 10 – AVATAR MOVEMENT TUTORIAL
+
+## SCENE 11: LEARN TO MOVE
+
+PUSHEEN:
+
+"Now, let's practise moving around!"
+
+PLAYER:
+
+"How do I move?"
+
+PUSHEEN:
+
+"Simply click or tap a place on the pathway, and your character will walk towards it!"
+
+Highlight an empty section of the stone pathway.
+
+Display:
+
+CLICK THE GLOWING PATHWAY TO MOVE YOUR CHARACTER!
+
+When the student clicks:
+
+- The avatar walks towards the selected location.
+- A walking animation plays.
+- The avatar stops at the destination.
+
+PUSHEEN:
+
+"That's it! You're moving!"
+
+### Movement requirements
+
+Desktop:
+
+- Click-to-move.
+- Optional WASD or arrow-key controls.
+
+Mobile:
+
+- Tap-to-move.
+- Touch-friendly controls.
+
+The avatar must:
+
+- Move only on walkable paths.
+- Avoid buildings.
+- Avoid environmental obstacles.
+- Stop at the selected destination.
+- Have idle and walking animations.
+
+If the student clicks an invalid location:
+
+PUSHEEN:
+
+"Hmm, that isn't a pathway! Try clicking the stone path instead."
+
+Allow another attempt.
+
+Use reliable pathfinding or a simpler defined walkable-area system, depending on the existing framework.
+
+Do not make movement merely decorative.
+
+---
+
+# PART 11 – BUILDING SELECTION TUTORIAL
+
+## SCENE 12: FIND DETECTIVE HQ
+
+PUSHEEN:
+
+"Great! Now let's practise choosing a building."
+
+"Can you find our first mission location?"
+
+The camera focuses on Detective HQ.
+
+The building glows.
+
+An animated arrow points towards it.
+
+Display:
+
+CLICK DETECTIVE HQ!
+
+The student must click the actual building.
+
+Open the building information card.
+
+Display:
+
+DETECTIVE HQ
+
+"Your first mission begins here!"
+
+STATUS:
+
+UNLOCKED.
+
+Display:
+
+ENTER DETECTIVE HQ
+
+The student has now completed the building selection tutorial.
+
+PUSHEEN:
+
+"Wonderful! You've found it!"
+
+"Are you ready for your first mystery?"
+
+PLAYER:
+
+"Yes! Let's solve it!"
+
+---
+
+# PART 12 – TUTORIAL COMPLETION
+
+## SCENE 13: PUSHEEN'S FINAL ENCOURAGEMENT
+
+PUSHEEN:
+
+"Excellent work, Detective!"
+
+"You have created your character, discovered your detective tools and learned how to explore our town."
+
+PLAYER:
+
+"So, what happens now?"
+
+PUSHEEN:
+
+"Now, our real adventure begins!"
+
+"There's a mystery waiting inside Detective HQ. And I think you're just the detective we need!"
+
+PLAYER:
+
+"Let's go!"
+
+PUSHEEN:
+
+"Follow me!"
+
+Display:
+
+TUTORIAL COMPLETED!
+
+"You are officially ready to begin your adventure."
+
+Show:
+
+- Player avatar.
+- Detective nickname.
+- Tutorial completion status.
+- First mission title.
+
+Do not grant mission completion rewards or badges prematurely.
+
+---
+
+# PART 13 – ENTERING DETECTIVE HQ
+
+## SCENE 14: THE FIRST MISSION BEGINS
+
+PUSHEEN:
+
+"Our first mystery is waiting inside Detective HQ!"
+
+The player avatar starts walking towards the building.
+
+Pusheen follows.
+
+### Entrance animation
+
+1. Camera focuses on Detective HQ.
+2. Building lights illuminate.
+3. Magnifying-glass emblem glows.
+4. Entrance doors open.
+5. Avatar approaches the entrance.
+6. Pusheen follows.
+7. Camera moves towards the entrance.
+8. Screen fades into the next scene.
+
+Display:
+
+MISSION 01
+
+THE MYSTERY OF THE UNEXPECTED PRIZE
+
+"Your first digital mystery is waiting!"
+
+Then transition to:
+
+SCREEN 03 – DETECTIVE HQ: SEGMENT 1, ACTIVITY 1, INDUCTION SET.
+
+IMPORTANT:
+
+Do not implement the actual induction video, Yes/No decision challenge or online safety lesson inside Screen 02.
+
+Those belong to Screen 03.
+
+---
+
+# PART 14 – FIRST-TIME AND RETURNING STUDENT MANAGEMENT
+
+The system must distinguish between new and returning students.
+
+| Feature | First-time student | Returning student |
+|---|---|---|
+| Character customisation | Required | Skipped |
+| Avatar | Create new | Load saved avatar |
+| Nickname | Choose | Restore |
+| Pusheen introduction | Full introduction | Short welcome or resume |
+| Tutorial | Full guided tutorial | Skip or replay |
+| Detective Bag | Empty | Restore inventory |
+| Mission Tracker | Mission 01 ready | Restore current mission |
+| Settings | Default | Restore saved preferences |
+| Building access | HQ unlocked | Restore saved states |
+| Progress | Start at zero | Restore previous progress |
+
+Provide a CONTINUE MY ADVENTURE option for returning students.
+
+Never reset saved learning progress when the student logs in again.
+
+---
+
+# PART 15 – DATABASE AND SAVE FUNCTIONALITY
+
+Use the existing Supabase integration if configured.
+
+Do not create a second database or authentication system.
+
+Inspect existing tables before making changes.
+
+Store the following information appropriately:
+
+STUDENT PROFILE:
+- Student ID.
+- Detective nickname.
+- Avatar configuration.
+- Avatar creation status.
+
+TUTORIAL PROGRESS:
+- Character confirmed.
+- Profile explored.
+- Detective Bag explored.
+- Mission Tracker explored.
+- Settings explored.
+- Seven buildings discovered.
+- Movement completed.
+- Detective HQ selected.
+- Tutorial completed.
+
+GAME PROGRESS:
+- XP.
+- Stars.
+- Badges.
+- Inventory.
+- Current mission.
+- Unlocked buildings.
+- Last saved position.
+
+SETTINGS:
+- Sound effects.
+- Background music.
+- Dialogue narration.
+- Subtitles.
+- Text size.
+- Animation preference.
+
+The data must be linked to the authenticated student.
+
+Apply appropriate Row Level Security.
+
+Students must only access their own records.
+
+## Offline support
+
+If the connection is lost:
+
+- Allow the tutorial to continue where possible.
+- Save progress locally.
+- Display an offline indicator.
+- Synchronise when connectivity returns.
+- Avoid overwriting newer server data with older local data.
+
+Do not claim successful cloud synchronisation unless the server confirms it.
+
+---
+
+# PART 16 – REUSABLE CHARACTER AND DIALOGUE SYSTEM
+
+Prepare a reusable system for future locations.
+
+The same dialogue component should be reusable for:
+
+- Detective Pusheen.
+- Aina.
+- Daniel.
+- Byte.
+- Teacher Chelsea.
+- Aina's Mother.
+
+Dialogue features:
+
+- Character name.
+- Character artwork.
+- Character expression.
+- Speech bubble.
+- Typewriter animation.
+- Skip typing.
+- NEXT button.
+- Optional narration.
+- Player responses.
+- Immediate feedback.
+
+Character expressions:
+
+- Happy.
+- Thinking.
+- Surprised.
+- Excited.
+- Worried.
+- Encouraging.
+- Celebrating.
+
+Keep the dialogue concise and suitable for Year 5 pupils.
+
+Do not make the player read unnecessarily long paragraphs.
+
+---
+
+# PART 17 – RESPONSIVE DESIGN
+
+The experience must work on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile phone.
+
+DESKTOP:
+- Full landscape town.
+- Seven buildings visible where practical.
+- HUD in screen corners.
+- Avatar in the environment.
+- Dialogue panel near the bottom.
+
+TABLET:
+- Scalable environment.
+- Readable dialogue.
+- Accessible buildings.
+- Touch-friendly controls.
+
+MOBILE:
+- Responsive town map.
+- Touch-to-move.
+- Tap-to-select buildings.
+- Large buttons.
+- Readable character customisation controls.
+- Adaptable dialogue panels.
+- Map panning where necessary.
+- No horizontal overflow.
+
+Do not simply shrink the desktop version to fit a mobile screen.
+
+The mobile experience must remain interactive.
+
+---
+
+# PART 18 – ACCEPTANCE TESTING
+
+Do not declare Screen 02 complete until the following have been tested.
+
+## Character Customisation
+
+[ ] First-time student enters character customisation.
+
+[ ] Multiple character appearances are available.
+
+[ ] Skin tone options work.
+
+[ ] Hairstyles work.
+
+[ ] Hair colours work.
+
+[ ] Clothing options work.
+
+[ ] Clothing colours work.
+
+[ ] Accessories work.
+
+[ ] Shoe options work.
+
+[ ] Avatar preview updates immediately.
+
+[ ] Randomise works.
+
+[ ] Undo works.
+
+[ ] Reset works.
+
+[ ] Detective nickname validation works.
+
+[ ] Confirm Character saves the avatar.
+
+[ ] Avatar remains consistent throughout the website.
+
+[ ] Returning student loads their saved avatar.
+
+## Cinematic Introduction
+
+[ ] Town environment loads.
+
+[ ] Camera introduction works.
+
+[ ] All seven buildings are visible.
+
+[ ] Player avatar appears correctly.
+
+[ ] Player nickname appears correctly.
+
+[ ] Detective Pusheen enters the scene.
+
+## Welcome Conversation
+
+[ ] Dialogue displays correctly.
+
+[ ] Pusheen expressions change.
+
+[ ] Player response options work.
+
+[ ] NEXT works.
+
+[ ] Typewriter effect works.
+
+[ ] Dialogue can be replayed.
+
+## Game HUD
+
+[ ] Player Profile opens.
+
+[ ] Detective Bag opens.
+
+[ ] Mission Tracker opens.
+
+[ ] Settings open.
+
+[ ] Help opens.
+
+[ ] All controls are connected to real functionality.
+
+## Interactive Tutorial
+
+[ ] Tutorial spotlights work.
+
+[ ] Profile interaction is required.
+
+[ ] Bag interaction is required.
+
+[ ] Mission Tracker interaction is required.
+
+[ ] Settings interaction is required.
+
+[ ] Immediate feedback appears.
+
+[ ] Students can replay instructions.
+
+## Seven Buildings
+
+[ ] Detective HQ is visible and unlocked.
+
+[ ] Red Flag Centre is visible and locked.
+
+[ ] Aina's House is visible and locked.
+
+[ ] Cyber Café is visible and locked.
+
+[ ] Advice Centre is visible and locked.
+
+[ ] Game Arcade is visible and locked.
+
+[ ] Digital Safe Garden is visible and locked.
+
+[ ] All seven building descriptions work.
+
+[ ] Building information cards work.
+
+[ ] Locked-building feedback works.
+
+## Movement and Navigation
+
+[ ] Avatar moves along walkable paths.
+
+[ ] Avatar cannot walk through buildings.
+
+[ ] Movement works on desktop.
+
+[ ] Movement works on mobile.
+
+[ ] Detective HQ can be selected.
+
+[ ] Entrance animation works.
+
+[ ] Transition to Screen 03 works.
+
+## Saving and Resume
+
+[ ] Avatar is saved.
+
+[ ] Nickname is saved.
+
+[ ] Tutorial progress is saved.
+
+[ ] Settings are saved.
+
+[ ] Returning student progress is restored.
+
+[ ] Offline fallback works where configured.
+
+[ ] No progress is accidentally overwritten.
+
+## Responsive and Accessibility
+
+[ ] Desktop layout works.
+
+[ ] Tablet layout works.
+
+[ ] Mobile layout works.
+
+[ ] No overlapping panels.
+
+[ ] No horizontal overflow.
+
+[ ] Text is readable.
+
+[ ] Keyboard navigation works.
+
+[ ] Touch interactions work.
+
+[ ] Reduced-motion preferences work.
+
+---
+
+# PART 19 – FINAL DELIVERABLES
+
+When Screen 02 is completed, provide:
+
+1. Fully implemented Screen 02.
+2. Functional character customisation system.
+3. Reusable avatar assets and configuration.
+4. Detective nickname functionality.
+5. Cinematic town introduction.
+6. Full Detective Pusheen introduction.
+7. Complete welcome dialogue.
+8. Functional player profile.
+9. Functional Detective Bag.
+10. Functional Mission Tracker.
+11. Functional Settings and Help panels.
+12. Complete seven-building town environment.
+13. Interactive building descriptions.
+14. Building lock/unlock interface.
+15. Avatar movement.
+16. Building selection.
+17. Interactive onboarding tutorial.
+18. Save and resume integration.
+19. Offline fallback where supported.
+20. Responsive desktop, tablet and mobile layouts.
+21. Working transition into Screen 03.
+22. List of created and modified files.
+23. List of assets used.
+24. List of outstanding configuration requirements.
+25. Actual testing results.
+
+If artwork is missing, create original temporary assets and clearly identify which assets should be replaced later.
+
+Do not invent credentials.
+
+Do not claim that a feature is working if it has not been implemented and tested.
+
+---
+
+# PART 20 – STRICT DEVELOPMENT RULES
+
+THIS TASK IS ONLY FOR SCREEN 02.
+
+Do not implement the following activities yet:
+
+- Detective HQ induction video.
+- Yes/No suspicious-message challenge.
+- Online safety lesson.
+- Red Flag Centre activity.
+- Aina's House comprehension.
+- Cyber Café investigation.
+- Advice Centre writing.
+- Game Arcade assessment.
+- Digital Safe Garden passport.
+
+Those belong to subsequent development screens.
+
+However, prepare the architecture so that all seven locations can connect to the same student avatar, HUD, dialogue system, navigation and progress database.
+
+MOST IMPORTANT:
+
+1. Preserve Screen 01.
+2. Connect Screen 02 directly to the existing student login.
+3. Build character customisation as the first experience for new students.
+4. Restore existing avatars for returning students.
+5. Make Detective Town a genuinely interactive environment.
+6. Make Pusheen an active companion.
+7. Require real student interaction throughout the tutorial.
+8. Keep all seven buildings visible.
+9. Only unlock Detective HQ initially.
+10. Save and restore student progress.
+11. Ensure the entire experience works independently without teacher assistance.
+
+Do not stop at a plan, wireframe, static mock-up or homepage.
+
+Work directly on the existing project files.
+
+Implement the actual features.
+
+Test the interactions.
+
+Fix errors.
+
+Maintain a working version.
+
+Do not delete existing functionality.
+
+Do not move to Screen 03 until Screen 02 has been implemented and tested.
+
+FINAL OBJECTIVE:
+
+When a student successfully logs in through Screen 01, they should be able to create their own detective character, enter a beautiful digital town, meet Detective Pusheen, learn how to navigate the game, discover all seven locations and enter Detective HQ independently.
+
+The student should feel that they have officially begun their own Digital Detective adventure.
+
+END OF SCREEN 02 DEVELOPMENT SPECIFICATION.

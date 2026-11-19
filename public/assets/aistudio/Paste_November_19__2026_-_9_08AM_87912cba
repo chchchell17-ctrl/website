@@ -1,0 +1,1168 @@
+# MASTER DEVELOPMENT PROMPT – SCREEN 01
+# DIGITAL DETECTIVE WORLD: LOGIN PORTAL
+
+## 1. YOUR ROLE AND DEVELOPMENT RESPONSIBILITY
+
+Act as a senior full-stack developer, UI/UX designer, game interface designer and educational website developer.
+
+You are working on an existing educational website project called **DIGITAL DETECTIVE WORLD**.
+
+Your task is to design and implement SCREEN 01 – THE LOGIN PORTAL.
+
+This is the first screen that appears when someone visits the website.
+
+IMPORTANT DEVELOPMENT INSTRUCTIONS:
+
+1. Inspect the existing project structure, framework, components, configuration and available assets before making changes.
+2. Work directly on the existing project files.
+3. Preserve the existing technology stack unless there is a compelling technical reason to change it.
+4. Reuse suitable uploaded illustrations, backgrounds, characters, logos and other assets.
+5. Do not delete or damage existing website functionality.
+6. Do not create a completely separate website or duplicate project.
+7. Do not implement the subsequent learning activities yet.
+8. Do not proceed to Screen 02.
+9. Build the login portal as a complete, functional and responsive screen.
+10. Do not use placeholder buttons or pretend authentication.
+11. If external credentials or database access are unavailable, implement the interface and secure integration structure, then clearly identify what needs configuration.
+12. Test all three login pathways, form validation, navigation, responsiveness and error handling.
+
+Take ownership of the implementation. Make sensible technical decisions without asking for approval on every minor detail.
+
+The result must be suitable for eventual deployment through Netlify.
+
+---
+
+# 2. WEBSITE IDENTITY AND VISUAL DIRECTION
+
+WEBSITE NAME:
+DIGITAL DETECTIVE WORLD
+
+TAGLINE:
+THINK BEFORE YOU CLICK!
+
+EDUCATIONAL CONTEXT:
+Year 5 English – Online Safety
+SJKC Ming Tao
+
+DESIGN INSPIRATION:
+
+Combine the visual atmosphere of:
+
+- Purble Place.
+- Frutiger Aero.
+- Windows Vista-era visual design.
+- Whimsical 3D educational adventure games.
+- Glossy glassmorphism interfaces.
+
+The login page should feel like the entrance to a colourful computer adventure game rather than a conventional school website.
+
+The overall atmosphere must be:
+
+- Cheerful.
+- Welcoming.
+- Colourful.
+- Playful.
+- Immersive.
+- Child-friendly.
+- Modern.
+- Clean.
+- Visually polished.
+
+The interface is designed primarily for Year 5 pupils, approximately 11 years old, while remaining professional and easy to use for teachers and parents.
+
+## 2.1 Colour palette
+
+Use a consistent pastel Frutiger Aero colour palette.
+
+Primary colours:
+- Sky blue: #A8DDF2
+- Aqua: #8DD9DF
+- Fresh green: #9AD88A
+- Lime green: #C5E98B
+- Soft lavender: #DCCCF5
+- Pastel pink: #F5D5E6
+- White glass: rgba(255,255,255,0.65)
+
+Supporting colours:
+- Deep blue for headings.
+- Soft grey for secondary text.
+- Dark green for successful actions.
+- Soft red for error messages.
+
+Avoid:
+- Black backgrounds.
+- Dark cyberpunk themes.
+- Excessive neon.
+- Harsh gradients.
+- Overly corporate styling.
+- Excessively minimalist layouts.
+
+## 2.2 Background environment
+
+Create a beautiful, full-screen 3D-inspired landscape.
+
+The background should contain:
+
+1. Bright blue sky.
+2. Soft white clouds.
+3. Green rolling hills.
+4. Colourful flowers.
+5. Small trees.
+6. Glossy glass bubbles.
+7. Beautiful distant buildings.
+8. A few butterflies.
+9. Crystal-clear water or a small stream, where appropriate.
+10. Soft sunlight and gentle atmospheric effects.
+
+The landscape should resemble a colourful digital game world.
+
+The background should have sufficient visual depth, with foreground, middle-ground and distant elements.
+
+Use original or appropriately licensed assets. The design may be inspired by Purble Place and Frutiger Aero, but must not copy copyrighted game artwork or characters.
+
+If suitable uploaded landscape assets exist, use them.
+
+Otherwise, create suitable original background illustrations or use CSS-based environmental effects.
+
+IMPORTANT:
+The background must remain visually attractive without making the login cards difficult to read.
+
+---
+
+# 3. MAIN LOGIN SCREEN STRUCTURE
+
+The initial screen must occupy the full browser viewport.
+
+Use a full-screen layout with no unnecessary scrolling on standard desktop resolutions.
+
+The layout must contain five main areas:
+
+A. Main website title.
+B. Website tagline and welcome text.
+C. Three login portal cards.
+D. Detective Pusheen mascot and welcome message.
+E. Footer information.
+
+## 3.1 Main website title
+
+Display prominently at the upper-centre section of the screen.
+
+DIGITAL DETECTIVE WORLD
+
+Directly below:
+
+THINK BEFORE YOU CLICK!
+
+Below the tagline:
+
+"An exciting online safety adventure awaits you."
+
+Typography:
+- Large, rounded, playful heading.
+- Easy-to-read lettering.
+- Deep blue or blue-green heading colour.
+- Soft shadow or subtle highlight.
+- Appropriate spacing between title and subtitle.
+
+The website title must be visually dominant.
+
+Do not make the title excessively futuristic.
+
+## 3.2 Login portal heading
+
+Display the following text above the three portal cards:
+
+"WHO'S ENTERING TODAY?"
+
+Supporting text:
+
+"Choose your portal to continue."
+
+Use friendly, simple English.
+
+## 3.3 Three portal cards
+
+IMPORTANT DESIGN DECISION:
+
+The three login cards must appear SIDE BY SIDE on desktop.
+
+Do not stack them vertically on desktop.
+
+All three cards must have equal visual importance, equal width and consistent height.
+
+Arrange them in this exact order:
+
+LEFT:
+STUDENT LOGIN
+
+CENTRE:
+TEACHER LOGIN
+
+RIGHT:
+PARENT LOGIN
+
+Each card should look like a floating translucent glass panel.
+
+Card characteristics:
+
+- Rounded corners.
+- Semi-transparent glass surface.
+- Soft white highlights.
+- Subtle shadows.
+- Slight depth.
+- Soft coloured glow.
+- Large central icon.
+- Clear title.
+- Short supporting description.
+- Small portal label.
+- Clickable card surface.
+
+Use a different pastel colour for each portal.
+
+STUDENT:
+Aqua / sky blue.
+
+TEACHER:
+Soft mint / pastel green.
+
+PARENT:
+Soft lavender / pastel purple.
+
+### CARD 1 – STUDENT LOGIN
+
+Icon:
+Graduation cap or suitable student icon.
+
+Title:
+STUDENT LOGIN
+
+Description:
+"Ready to become a Junior Detective?"
+
+Small label:
+STUDENT PORTAL
+
+The entire card must be clickable.
+
+On hover:
+- Slightly enlarge the card.
+- Increase the aqua glow.
+- Add a gentle floating effect.
+- Brighten the icon.
+- Display a subtle arrow indicating entry.
+
+On click:
+Open the Student Login Panel.
+
+### CARD 2 – TEACHER LOGIN
+
+Icon:
+School building or teacher icon.
+
+Title:
+TEACHER LOGIN
+
+Description:
+"Access your Teacher Control Centre."
+
+Small label:
+TEACHER PORTAL
+
+The entire card must be clickable.
+
+On hover:
+- Slightly enlarge the card.
+- Increase the green glow.
+- Add a gentle floating effect.
+- Brighten the icon.
+
+On click:
+Open the Teacher Login Panel.
+
+### CARD 3 – PARENT LOGIN
+
+Icon:
+Family or users icon.
+
+Title:
+PARENT LOGIN
+
+Description:
+"See your child's learning progress."
+
+Small label:
+PARENT PORTAL
+
+The entire card must be clickable.
+
+On hover:
+- Slightly enlarge the card.
+- Increase the lavender glow.
+- Add a gentle floating effect.
+- Brighten the icon.
+
+On click:
+Open the Parent Login Panel.
+
+IMPORTANT:
+The cards must not behave like decorative illustrations. They must perform their actual navigation actions.
+
+---
+
+# 4. DETECTIVE PUSHEEN MASCOT
+
+Detective Pusheen must appear on the login screen as a SMALL WELCOMING MASCOT.
+
+Do not make Pusheen the largest element on the page.
+
+Do not use Pusheen as the main background illustration.
+
+The first full character introduction and larger character appearance will happen AFTER successful student login.
+
+## 4.1 Character appearance
+
+Use the established Detective Pusheen design:
+
+- Cute grey cat.
+- Brown detective hat.
+- Magnifying glass.
+- Friendly face.
+- Soft, welcoming expression.
+- Consistent character proportions.
+- Original approved artwork, if available.
+
+Place Pusheen near the bottom-right or lower section of the login screen without covering the portal cards.
+
+The character should remain visible but not distract from the three login choices.
+
+## 4.2 Mascot animation
+
+Use subtle animation:
+
+- Gentle breathing movement.
+- Occasional blinking.
+- Slight head movement.
+- Small paw movement.
+- Occasional magnifying-glass movement.
+
+Do not use excessive bouncing or distracting movement.
+
+## 4.3 Welcome dialogue
+
+Display a small translucent speech bubble beside Pusheen.
+
+Exact dialogue:
+
+DETECTIVE PUSHEEN:
+
+"Hello there! Welcome to Digital Detective World. Choose your portal to begin!"
+
+The speech bubble should have:
+- White translucent background.
+- Rounded corners.
+- Soft shadow.
+- Readable dark-blue text.
+- Small pointer towards Pusheen.
+
+The speech bubble should not cover the three portal cards.
+
+Do not start the full student introduction conversation here.
+
+Pusheen is only welcoming visitors at this stage.
+
+---
+
+# 5. STUDENT LOGIN PANEL
+
+When the student clicks STUDENT LOGIN, display a dedicated login panel.
+
+Use a smooth transition from the main three-portal screen.
+
+Do not navigate to an unrelated website.
+
+Keep the same landscape background, but slightly soften or blur the background behind the login panel.
+
+The login panel should have a blue/aqua glass appearance.
+
+## 5.1 Student panel heading
+
+WELCOME, JUNIOR DETECTIVE!
+
+Supporting text:
+
+"Enter your detective details to begin your adventure."
+
+## 5.2 Student login fields
+
+The student must provide THREE pieces of information.
+
+FIELD 1:
+Class Code
+
+Placeholder:
+"Enter your class code"
+
+FIELD 2:
+Student ID
+
+Placeholder:
+"Enter your student ID"
+
+FIELD 3:
+Student PIN
+
+Placeholder:
+"Enter your PIN"
+
+The Student PIN field must:
+- Be a password-style input.
+- Hide the entered digits by default.
+- Include a show/hide PIN control.
+- Prevent accidental display of the PIN.
+- Use the configured PIN validation policy.
+
+Do not invent a fixed PIN length if the school has not configured one.
+
+## 5.3 Student login buttons
+
+Primary button:
+
+LOGIN
+
+Secondary button:
+
+BACK TO PORTALS
+
+The LOGIN button must:
+- Have an aqua/blue glass appearance.
+- Show a loading state while authenticating.
+- Prevent accidental repeated submissions.
+- Display a clear success or error response.
+
+The BACK TO PORTALS button must return to the original three-card login screen.
+
+## 5.4 Student login instructions
+
+Display this message below the fields:
+
+"Don't have your login details? Ask your teacher for help."
+
+Do not display a public student registration form.
+
+Student accounts should be provisioned through the authorised teacher or administrator process.
+
+## 5.5 Student authentication behaviour
+
+Authenticate using the combination of:
+
+- Class Code.
+- Student ID.
+- Student PIN.
+
+IMPORTANT TECHNICAL REQUIREMENT:
+
+The student login must be implemented securely.
+
+Do not authenticate students by simply comparing PINs against publicly readable database records.
+
+Use a secure server-side authentication flow, such as an appropriately implemented Supabase Edge Function or another secure authentication mechanism.
+
+The backend must:
+- Validate the class code.
+- Validate the student ID.
+- Verify the PIN securely.
+- Apply rate limiting.
+- Prevent brute-force attempts.
+- Create an authenticated student session.
+- Return only the necessary student profile information.
+- Enforce student role permissions.
+
+Never store student PINs in plain text.
+
+Never expose private authentication credentials in frontend code.
+
+Do not reveal whether a particular student ID or class code exists through detailed error messages.
+
+## 5.6 Student login error messages
+
+Use these exact friendly messages:
+
+EMPTY FIELDS:
+
+"Oops! Please complete your login details."
+
+INCORRECT DETAILS:
+
+"Hmm... That doesn't look right, Detective. Please check your details and try again!"
+
+TOO MANY ATTEMPTS:
+
+"Please wait a moment before trying again."
+
+NETWORK ERROR:
+
+"Oops! We couldn't connect. Please check your internet connection and try again."
+
+Do not expose technical error messages to pupils.
+
+## 5.7 Successful student login
+
+After successful authentication:
+
+FIRST-TIME STUDENT:
+
+- Create the student session.
+- Check whether an avatar has already been created.
+- If no avatar exists, proceed to the Avatar Creation Screen.
+- Save the completed avatar to the student's profile.
+- Continue to Screen 02.
+
+RETURNING STUDENT:
+
+- Restore the saved avatar.
+- Restore the player's previous XP.
+- Restore stars and badges.
+- Restore completed missions.
+- Restore the last saved learning position.
+- Continue to Screen 02 or the appropriate saved learning position according to the website's resume design.
+
+Display the following success message:
+
+"Welcome back, Detective! Your adventure is waiting!"
+
+Use a smooth, cheerful transition.
+
+IMPORTANT:
+Do not build the avatar creation screen or Detective Pusheen's full welcome scene as part of Screen 01. Those belong to the next screen.
+
+---
+
+# 6. TEACHER LOGIN PANEL
+
+When the user clicks TEACHER LOGIN, display a separate teacher login panel.
+
+Keep the same website identity and background.
+
+Use a pastel mint-green glass panel.
+
+## 6.1 Teacher panel heading
+
+WELCOME BACK, TEACHER!
+
+Supporting text:
+
+"Sign in to access your Teacher Control Centre."
+
+## 6.2 Teacher login fields
+
+FIELD 1:
+Registered Email / Username
+
+Placeholder:
+"Enter your registered email or username"
+
+FIELD 2:
+Password
+
+Placeholder:
+"Enter your password"
+
+Password field requirements:
+- Hide password by default.
+- Include show/hide control.
+- Use appropriate password input behaviour.
+
+## 6.3 Teacher buttons
+
+Primary:
+LOGIN
+
+Secondary:
+FORGOT PASSWORD?
+
+Additional navigation:
+BACK TO PORTALS
+
+## 6.4 Teacher authentication
+
+Use secure authentication through the configured backend.
+
+Teacher accounts must have a distinct teacher role.
+
+After successful authentication:
+
+- Verify the teacher's role.
+- Create a secure session.
+- Redirect to the Teacher Control Centre.
+
+Do not redirect a student or parent account to the teacher dashboard.
+
+## 6.5 Teacher error messages
+
+INCORRECT LOGIN:
+
+"Unable to sign in. Please check your login details and try again."
+
+NETWORK ERROR:
+
+"Unable to connect. Please check your internet connection."
+
+FORGOT PASSWORD:
+
+Allow the teacher to use the secure password recovery process.
+
+The recovery process should use the registered email address.
+
+BACK TO PORTALS:
+
+Return to the original three-card screen.
+
+IMPORTANT:
+Teacher Chelsea is a fictional learning character used inside the student adventure. The actual teacher account is a separate administrative account.
+
+Do not confuse Teacher Chelsea's in-game role with the authenticated teacher's real account.
+
+---
+
+# 7. PARENT LOGIN PANEL
+
+When the user clicks PARENT LOGIN, display a separate parent login panel.
+
+Use a pastel lavender/purple glass panel.
+
+## 7.1 Parent panel heading
+
+WELCOME, PARENTS!
+
+Supporting text:
+
+"Sign in to follow your child's Digital Detective journey."
+
+## 7.2 Parent login fields
+
+FIELD 1:
+Registered Email
+
+Placeholder:
+"Enter your registered email"
+
+FIELD 2:
+Password
+
+Placeholder:
+"Enter your password"
+
+Include:
+- Show/hide password.
+- LOGIN button.
+- FORGOT PASSWORD button.
+- BACK TO PORTALS button.
+
+## 7.3 Parent authentication
+
+Use secure authentication through the configured backend.
+
+After successful authentication:
+
+1. Verify the parent role.
+2. Verify the parent-child relationship.
+3. Confirm the parent is authorised to access the linked student profile.
+4. Create the parent session.
+5. Redirect to the Parent Dashboard.
+
+Parents must only see records belonging to their linked child.
+
+A parent must never be able to:
+- Access another student's profile.
+- Modify student assessment answers.
+- Change reading assessment scores.
+- Change writing assessment scores.
+- Modify student XP or badges.
+- Access teacher-only functions.
+- View confidential teacher records.
+
+## 7.4 Parent account not linked
+
+If a parent account is not linked to a student, display:
+
+"This account is not linked to a student yet. Please contact the school for assistance."
+
+Do not allow unrestricted student searching.
+
+Parent-child relationships must be established through an authorised school-issued linking process.
+
+## 7.5 Parent password recovery
+
+Allow parents to recover their passwords using their registered email address.
+
+Use the backend's secure password recovery process.
+
+Do not expose whether an email belongs to an existing account.
+
+BACK TO PORTALS:
+
+Return to the three-card login screen.
+
+---
+
+# 8. MAIN FOOTER
+
+At the bottom of the login screen, display:
+
+SJKC MING TAO · YEAR 5 ENGLISH
+
+Supporting label:
+
+ONLINE SAFETY ADVENTURE
+
+The footer must:
+- Use small but readable text.
+- Have sufficient contrast.
+- Remain unobtrusive.
+- Not overlap Pusheen.
+- Not overlap the login cards.
+
+Do not add unnecessary external links or social media icons.
+
+---
+
+# 9. ANIMATIONS AND INTERACTIONS
+
+The login screen must feel alive without becoming distracting.
+
+## 9.1 Background animations
+
+Implement:
+
+- Slowly drifting clouds.
+- Gentle floating glass bubbles.
+- Occasional butterflies flying across the screen.
+- Subtle movement in the grass or flowers, if practical.
+- Soft sunlight effects.
+
+Animations should be lightweight and optimised.
+
+## 9.2 Portal card animations
+
+On hover:
+- Increase card size slightly.
+- Add a subtle coloured glow.
+- Raise the card slightly.
+- Brighten the icon.
+- Smoothly animate the arrow.
+
+On click:
+- Show a gentle press-down animation.
+- Transition into the corresponding login panel.
+
+## 9.3 Buttons
+
+All buttons must have:
+
+- Hover state.
+- Active/pressed state.
+- Disabled state.
+- Loading state where appropriate.
+- Visible keyboard-focus state.
+
+## 9.4 Pusheen animations
+
+Use:
+- Blinking.
+- Gentle breathing.
+- Small head movement.
+- Small paw movement.
+
+Avoid excessive or continuous bouncing.
+
+## 9.5 Login panel transitions
+
+When a portal is selected:
+
+- Fade the portal cards slightly.
+- Smoothly reveal the corresponding login panel.
+- Maintain the background.
+- Preserve the website identity.
+- Avoid a sudden page flash.
+
+When BACK TO PORTALS is clicked, smoothly return to the three-card layout.
+
+Respect the user's reduced-motion preference.
+
+---
+
+# 10. RESPONSIVE DESIGN
+
+The website must work properly on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile phone.
+
+DESKTOP:
+
+- Three cards side by side.
+- Main title centred.
+- Pusheen visible near the bottom-right.
+- Footer at the bottom.
+- Full-screen landscape background.
+
+TABLET:
+
+- Maintain three cards side by side if sufficient width is available.
+- Otherwise use a balanced responsive arrangement.
+- Ensure all text remains readable.
+
+MOBILE:
+
+- Stack the three portal cards vertically.
+- Keep each card large enough to tap.
+- Reduce unnecessary background details.
+- Keep Pusheen visible without covering the login fields.
+- Ensure the title does not overflow.
+- Keep the login form within the viewport.
+- Avoid horizontal scrolling.
+
+The mobile design must not simply be a squeezed desktop layout.
+
+---
+
+# 11. ACCESSIBILITY AND USABILITY
+
+Implement:
+
+- Semantic HTML.
+- Proper input labels.
+- Accessible button names.
+- Keyboard navigation.
+- Visible focus indicators.
+- Sufficient colour contrast.
+- Screen-reader-friendly error messages.
+- Clear validation.
+- Touch-friendly controls.
+- Reduced-motion support.
+
+Do not communicate errors using colour alone.
+
+Do not use tiny fonts.
+
+Use simple English suitable for Year 5 pupils.
+
+---
+
+# 12. SECURITY AND DATABASE INTEGRATION
+
+The project is intended to use Supabase as the cloud database and authentication service, subject to the existing project's configuration.
+
+Inspect the existing Supabase setup before making changes.
+
+If Supabase is already connected:
+- Reuse the existing configuration.
+- Preserve existing tables.
+- Preserve existing authentication flows.
+- Do not duplicate existing functionality.
+
+If Supabase is not configured:
+- Build the frontend and authentication integration structure.
+- Clearly identify the required environment variables.
+- Do not invent project URLs or keys.
+- Do not pretend authentication is connected.
+
+Required security principles:
+
+1. Keep Supabase service-role keys on the server only.
+2. Use the public publishable/anon key only where appropriate.
+3. Apply Row Level Security.
+4. Separate student, teacher and parent permissions.
+5. Use secure session handling.
+6. Protect private student information.
+7. Apply server-side validation.
+8. Rate-limit authentication requests.
+9. Never expose student PIN hashes.
+10. Restrict parent access to linked children.
+11. Restrict teacher functions to authorised teacher accounts.
+12. Do not trust client-side role declarations.
+
+Use environment variables for external configuration.
+
+Do not place credentials directly in source code.
+
+---
+
+# 13. ERROR HANDLING AND USER FEEDBACK
+
+Every login pathway must provide appropriate feedback.
+
+Examples:
+
+STUDENT:
+- Empty fields.
+- Incorrect details.
+- Invalid class code.
+- Too many attempts.
+- Network failure.
+
+TEACHER:
+- Invalid login.
+- Password recovery.
+- Network failure.
+- Unauthorised role.
+
+PARENT:
+- Invalid login.
+- Account not linked.
+- Password recovery.
+- Network failure.
+- Unauthorised role.
+
+Use friendly notification panels.
+
+Do not expose database errors, authentication tokens or internal server information.
+
+Provide a clear way to return to the three portals after an error.
+
+---
+
+# 14. TECHNICAL DEVELOPMENT REQUIREMENTS
+
+Before implementation:
+
+1. Inspect the existing repository.
+2. Identify the framework and build tools.
+3. Identify the existing routing system.
+4. Identify existing assets.
+5. Identify Supabase configuration.
+6. Identify existing authentication components.
+7. Identify existing styling conventions.
+
+Use the existing architecture wherever possible.
+
+The implementation should:
+- Be component-based.
+- Be maintainable.
+- Avoid unnecessary dependencies.
+- Use reusable portal-card components.
+- Use reusable input components.
+- Separate authentication logic from presentation.
+- Keep the three login pathways logically separate.
+- Avoid duplicating code.
+- Be suitable for Netlify deployment.
+
+Do not introduce a new framework without a clear technical reason.
+
+Do not hardcode private credentials.
+
+Do not create fake successful login responses.
+
+If the backend is not configured, show a clear setup requirement instead of pretending that authentication is operational.
+
+---
+
+# 15. REQUIRED COMPONENT STRUCTURE
+
+Organise Screen 01 into reusable components appropriate to the existing framework.
+
+Suggested structure:
+
+LoginScreen
+├── LoginBackground
+│   ├── Sky
+│   ├── Clouds
+│   ├── Hills
+│   ├── Flowers
+│   ├── FloatingBubbles
+│   └── Butterflies
+│
+├── LoginHeader
+│   ├── WebsiteTitle
+│   ├── Tagline
+│   └── WelcomeText
+│
+├── PortalSelection
+│   ├── StudentPortalCard
+│   ├── TeacherPortalCard
+│   └── ParentPortalCard
+│
+├── StudentLoginPanel
+│   ├── ClassCodeField
+│   ├── StudentIDField
+│   ├── StudentPINField
+│   ├── StudentLoginButton
+│   └── BackToPortalsButton
+│
+├── TeacherLoginPanel
+│   ├── TeacherEmailField
+│   ├── TeacherPasswordField
+│   ├── TeacherLoginButton
+│   ├── ForgotPasswordButton
+│   └── BackToPortalsButton
+│
+├── ParentLoginPanel
+│   ├── ParentEmailField
+│   ├── ParentPasswordField
+│   ├── ParentLoginButton
+│   ├── ForgotPasswordButton
+│   └── BackToPortalsButton
+│
+├── PusheenMascot
+│   └── WelcomeSpeechBubble
+│
+└── LoginFooter
+
+This is a suggested logical structure. Adapt the exact file organisation to the existing project.
+
+---
+
+# 16. ACCEPTANCE TESTING
+
+Do not declare Screen 01 complete until the following tests have been carried out.
+
+VISUAL TESTS:
+
+[ ] Full-screen landscape background works.
+[ ] Website title is visible and correctly spelt.
+[ ] Tagline is visible.
+[ ] Three login cards appear side by side on desktop.
+[ ] Student card uses aqua/blue.
+[ ] Teacher card uses pastel green.
+[ ] Parent card uses pastel lavender.
+[ ] Pusheen appears as a small welcoming mascot.
+[ ] Pusheen's speech bubble is readable.
+[ ] Footer displays the correct school and subject information.
+[ ] Background does not obscure the login cards.
+
+STUDENT PORTAL TESTS:
+
+[ ] Student card opens the Student Login Panel.
+[ ] Class Code field works.
+[ ] Student ID field works.
+[ ] PIN field works.
+[ ] PIN visibility toggle works.
+[ ] Empty fields are validated.
+[ ] Invalid login produces a friendly error.
+[ ] Successful login creates an authenticated student session.
+[ ] First-time student is directed to avatar setup.
+[ ] Returning student progress is restored.
+[ ] Back button returns to the three portals.
+
+TEACHER PORTAL TESTS:
+
+[ ] Teacher card opens the Teacher Login Panel.
+[ ] Email/username field works.
+[ ] Password field works.
+[ ] Password visibility toggle works.
+[ ] Login works with authorised teacher credentials.
+[ ] Incorrect login displays a friendly error.
+[ ] Password recovery works when configured.
+[ ] Teacher is redirected to the Teacher Control Centre.
+[ ] Student accounts cannot access teacher-only functions.
+
+PARENT PORTAL TESTS:
+
+[ ] Parent card opens the Parent Login Panel.
+[ ] Email field works.
+[ ] Password field works.
+[ ] Password visibility toggle works.
+[ ] Parent authentication works.
+[ ] Parent-child linking is checked.
+[ ] Unlinked account displays an appropriate message.
+[ ] Parent can access only authorised child records.
+[ ] Parent cannot access teacher functions.
+
+ANIMATION TESTS:
+
+[ ] Clouds move gently.
+[ ] Bubbles float.
+[ ] Butterflies appear occasionally.
+[ ] Portal hover effects work.
+[ ] Portal click animations work.
+[ ] Pusheen animations work.
+[ ] Login panel transitions work.
+[ ] Reduced-motion preference is respected.
+
+RESPONSIVE TESTS:
+
+[ ] Desktop layout works.
+[ ] Laptop layout works.
+[ ] Tablet layout works.
+[ ] Mobile layout works.
+[ ] No horizontal scrolling.
+[ ] No overlapping text.
+[ ] No overlapping login buttons.
+[ ] All touch targets are usable.
+
+SECURITY TESTS:
+
+[ ] No passwords stored in plain text.
+[ ] No service-role key exposed in frontend code.
+[ ] Student, teacher and parent roles are separated.
+[ ] Parent access is restricted.
+[ ] Authentication is server-validated.
+[ ] Invalid login attempts are appropriately restricted.
+[ ] Private student data is not publicly accessible.
+
+---
+
+# 17. FINAL DELIVERABLES
+
+When Screen 01 is finished, provide:
+
+1. Complete implemented Login Screen.
+2. All three functioning portal selection cards.
+3. Student login interface.
+4. Teacher login interface.
+5. Parent login interface.
+6. Pusheen mascot and welcome speech bubble.
+7. Responsive desktop, tablet and mobile layouts.
+8. All required animations.
+9. Authentication integration or clearly identified configuration requirements.
+10. Tested navigation and form validation.
+11. List of files created or modified.
+12. List of external credentials or services still requiring configuration.
+13. Instructions for previewing the screen locally.
+14. Netlify deployment considerations.
+
+Do not claim that a feature works unless it has actually been tested.
+
+If any feature cannot be completed because credentials, artwork or external services are missing, identify that limitation precisely.
+
+---
+
+# 18. STRICT SCOPE CONTROL
+
+THIS TASK IS ONLY FOR SCREEN 01 – LOGIN PORTAL.
+
+Do not implement:
+- Screen 02 – Detective Pusheen's full welcome scene.
+- Avatar creation interface.
+- Detective Town map.
+- Detective HQ.
+- Red Flag Centre.
+- Aina's House.
+- Cyber Café.
+- Advice Centre.
+- Game Arcade.
+- Digital Safe Garden.
+- Learning activities.
+- XP or badge progression.
+
+Those will be implemented in subsequent development stages.
+
+However, prepare the login architecture so it can connect cleanly to those future screens.
+
+Do not replace the website's educational purpose or alter the Year 5 English learning objectives.
+
+The login portal must establish the visual identity and secure entry point for the complete Digital Detective World.
+
+FINAL INSTRUCTION:
+
+Build the actual working Screen 01 directly in the existing project.
+
+Do not stop at a wireframe, mock-up, design explanation or development plan.
+
+Implement it, test it, fix any errors and maintain the existing project structure.
+
+Only report Screen 01 as complete when its available functionality has been implemented and verified.
+
+The next screen will be developed separately after this screen has been reviewed.
